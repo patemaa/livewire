@@ -1,6 +1,10 @@
 <div>
-    <input type="text" wire:model="todo">
-    <button type="button" wire:click="add">add</button>
+    <form wire:submit="add">
+        <input type="text" wire:model.live="todo">
+        <button type="submit">add</button>
+    </form>
+
+    <span>Current todo: {{ $todo }}</span>
 
     <ul>
         @foreach($todos as $todo)

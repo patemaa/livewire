@@ -19,5 +19,7 @@ class Todo extends Component
     public function add()
     {
         $this->todos[] = $this->todo;
+
+        $this->reset('todo');
     }
 }
