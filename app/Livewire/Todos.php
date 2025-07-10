@@ -2,12 +2,17 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Todos')]
 class Todos extends Component
 {
     public $todo = '';
-    public $todos = [];
+    public $todos = [
+        'clean house',
+        'feed hamster',
+    ];
 
     function updatedTodo($value)
     {
@@ -16,7 +21,7 @@ class Todos extends Component
 
     public function render()
     {
-        return view('livewire.todo');
+        return view('livewire.todos');
     }
 
     public function add()
