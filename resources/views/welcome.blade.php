@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <livewire:counter/>
+    <livewire:todo/>
 </body>
 </html>
