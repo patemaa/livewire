@@ -9,9 +9,9 @@ class Todo extends Component
     public $todo = '';
     public $todos = [];
 
-    function updated($property, $value)
+    function updatedTodo($value)
     {
-        $property = strtoupper($value);
+        $this->todo = strtoupper($value);
     }
 
     public function render()
