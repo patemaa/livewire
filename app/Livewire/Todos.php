@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class Todo extends Component
+class Todos extends Component
 {
     public $todo = '';
     public $todos = [];
